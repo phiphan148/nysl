@@ -46,6 +46,18 @@ ul li {
 .title-color{
     color: rgb(226, 226, 7);
 }
+::placeholder {
+    color: #000;
+    opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+::-ms-input-placeholder {
+    color: #000;
+}
 /* HEADER */
 .grid-header{
     display: grid;
