@@ -36,7 +36,33 @@
             </div> 
             <div class="content">
                 <div class="content-inner">
-                    <p>Thank you for your registration.</p>
+                    <p>Thank you for your registration. Here is your data</p>
+                    <div class="data-submit">
+                        <table class="style-table">
+                            <tr>
+                              <th>Form Field</th>
+                              <th>Your data</th>
+                            </tr>
+                          <script language="javascript">
+                          var args = location.search.substr(1).split('&');
+                          for (var i = 0; i < args.length; ++i) {
+                            var parts = args[i].split('=');
+                            if (parts != null) {
+                              var field = parts[0];
+                              var value = parts[1];
+                              if (value == null) {
+                                value = "null"
+                              }
+                              else {
+                                value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                              }
+                              document.writeln('<tr><td>' + field + '</td>');
+                              document.writeln('<td>' + value + '</td></tr>');
+                            }
+                          }
+                          </script>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="footer">
