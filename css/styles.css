@@ -443,12 +443,6 @@ input[type=text]{
         grid-row-start: 2;
         grid-row-end: 3;
     }
-   .style-table th, td {
-        border: 1px solid rgb(226, 226, 7);
-            -moz-background-clip: padding;     /* Firefox 3.6 */
-            -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
-            background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
-    }
 }
 @media only screen and (min-width: 768px) and (max-width: 961px){
     body{
