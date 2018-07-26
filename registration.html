@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./js/validform.js"></script>
+<title>Registration Form</title>
+</head>
+<body>
+    <div class="wrap-content">
+        <div class="wrap-content-bg">
+            <div class="header">
+                <div class="grid-header">
+                    <div class="grid-header-items logo"><a target="_blank" href="./index.html"><img src="./images/nysl_logo.png" alt="logo"></a></div>
+                    <div class="grid-header-items brand"><a href="./index.html">Northside Youth Soccer League</a></div>
+                    <div class="grid-header-items dropdown-menu"><img id="menu-ico" src="./images/menu-ico.png" onclick="menuClick()" alt="menu-ico"></div>
+                    <div class="grid-header-items menu">
+                        <div class="menu-items"><a id="homemenu" href="./index.html">Home</a></div>
+                        <div class="menu-items"><a id="aboutment" href="./about.html">About</a></div>
+                        <div class="menu-items"><a id="rulesmenu" href="./rules.html">Rules</a></div>
+                        <div class="menu-items"><a id="schedulemenu" href="./schedule.html">Schedule</a></div>
+                        <div class="menu-items"><a id="regismenu" href="./registration.html">Registration</a></div>
+                        <div class="menu-items"><a id="contactmenu" href="./contact.html">Contact</a></div>
+                    </div>
+                </div>
+                <div id="menu-content">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About NYSL</a></li>
+                        <li><a href="./rules.html">Rules & Policies</a></li>
+                        <li><a href="./schedule.html">Schedule</a></li>
+                        <li><a href="./registration.html">Registration</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <img class="header-img" src="./images/design1_image1-1.png" alt="header bg">
+            </div>    
+            <div class="content">
+                    <div class="content-inner">
+                        <div class="form-bg">
+                            <form id="regisf" name="registerform" action="./thank.html" method="get">
+                                <div class="section">
+                                    <div class="flex-form">
+                                        <div class="flex-form flex-form-items">
+                                            <span>Player's First Name:</span>
+                                            <input class="flex-form-items" type="text" id="fname" name="firstname" value="">                                            
+                                        </div>
+                                        <div class="flex-form flex-form-items">
+                                            <span>Last name:</span>
+                                            <input class="flex-form-items" type="text" id="lname" name="lastname" value="">
+                                        </div>
+                                    </div>
+                                    <div class="flex-form">
+                                        <span>Street Address:</span>
+                                        <input class="flex-form-items" type="text" id="add" name="address" value="">
+                                    </div>
+                                    <div class="flex-form">
+                                        <div class="flex-form flex-form-items">
+                                            <span>City:</span>
+                                            <input class="flex-form-items" type="text" name="city" id="city" value="">                                             
+                                        </div>
+                                        <div class="flex-form flex-form-items">
+                                            <span>Zip Code:</span>
+                                            <input class="flex-form-items" id="zip" type="text" name="zipcode" value="">
+                                        </div>
+                                    </div>
+                                    <div class="flex-form">
+                                        <div class="flex-form flex-form-items">
+                                            <span>Birthday:</span>
+                                            <input class="flex-form-items" type="text" id="dob" name="DOB" value="">
+                                        </div>
+                                        <div class="flex-form flex-form-items">
+                                            <span>Gender:</span><input type="radio" name="gender" value="male"><span>Male</span><input type="radio" name="gender" value="Female"><span>Female</span> 
+                                        </div>
+                                    </div>
+                                    <div class="flex-form">
+                                        <span class="grade">Grade:</span>
+                                        <input type="radio" name="grade" value="pre">Pre-school
+                                        <input type="radio" name="grade" value="firstgrade">1<sup>st</sup>
+                                        <input type="radio" name="grade" value="secondgrade">2<sup>nd</sup>
+                                        <input type="radio" name="grade" value="thirdgrade">3<sup>rd</sup> 
+                                    </div>
+                                    <div class="flex-form">
+                                        <span class="parent-form">Parent/Guardian:</span>
+                                        <input class="flex-form-items" type="text" id="parent" name="parent" value="">
+                                    </div>
+                                    <div class="flex-form">
+                                        <div class="flex-form flex-form-items">
+                                            <span class="phone-form">Contact Phone:</span>
+                                            <input class="flex-form-items" type="text" id="phone" name="phone" value="">      
+                                        </div>
+                                        <div class="flex-form flex-form-items">
+                                            <span class="email-form">Contact email:</span>
+                                            <input class="flex-form-items" type="text" id="email" name="email" value="">        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <h4>Which elementary schools do you live near?</h4>
+                                    <div class="row">
+                                        <div class="col6"><h4>First Closest School</h4></div>
+                                        <div class="col6"><h4>Second Closest School:</h4></div>
+                                    </div>
+                                    <div class="row2 section">
+                                        <div class="item1">
+                                            <input type="checkbox" name="location-elementary" value="AJ Katzenmaier">AJ Katzenmaier<br>
+                                            <input type="checkbox" name="location-elementary" value="Greenbay">Greenbay<br>
+                                            <input type="checkbox" name="location-elementary" value="Howard A Yeager">Howard A Yeager<br>   
+                                        </div>
+                                        <div class="item2">
+                                            <input type="checkbox" name="location-elementary" value="Marjorie P Hart">Marjorie P Hart<br>
+                                            <input type="checkbox" name="location-elementary" value="North Elementary">North Elementary<br>
+                                            <input type="checkbox" name="location-elementary" value="South Elementary">South Elementary<br>
+                                        </div>
+                                        <div class="item3">
+                                            <input type="checkbox" name="location-elementary" value="AJ Katzenmaier">AJ Katzenmaier<br>
+                                            <input type="checkbox" name="location-elementary" value="AJ Katzenmaier">AJ Katzenmaier<br>
+                                            <input type="checkbox" name="location-elementary" value="AJ Katzenmaier">AJ Katzenmaier<br>   
+                                        </div>
+                                        <div class="item4">
+                                            <input type="checkbox" name="location-elementary" value="Marjorie P Hart">Marjorie P Hart<br>
+                                            <input type="checkbox" name="location-elementary" value="North Elementary">North Elementary<br>
+                                            <input type="checkbox" name="location-elementary" value="South Elementary">South Elementary<br> 
+                                        </div>
+                                    </div>
+                                    <h4>What position(s) do you normally play? (check all that apply)</h4>
+                                    <div class="section row">
+                                        <div class="col3">
+                                            <input type="checkbox" name="position" value="Forward">Forward<br>
+                                            <input type="checkbox" name="position" value="Defense">Defense<br> 
+                                        </div>
+                                        <div class="col3">
+                                            <input type="checkbox" name="position" value="Midfield">Midfield<br>
+                                            <input type="checkbox" name="position" value="Goalkeeper">Goalkeeper<br> 
+                                        </div>
+                                    </div>
+                                    <div class="section check-uniform">
+                                        <div class="col3"><h4>Already have a uniform</h4></div>
+                                        <div class="col3"><input onclick="disabledChoosing()" type="radio" id="uniForm" name="uniform" value="">Yes <input onclick="enabledChoosing()" type="radio" id="uniForm2" name="uniform" value="">No</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col6"><h4>Jersey Size:</h4></div>
+                                        <div class="col6"><h4>Shorts Size:</h4></div>
+                                    </div>
+                                    <div class="section row2">
+                                        <div class="item1">
+                                            <input type="checkbox" id="youths" name="size" value="">Youth Small<br>
+                                            <input type="checkbox" id="youthm" name="size" value="">Youth Medium<br>
+                                            <input type="checkbox" id="youthl" name="size" value="">Youth Large<br>
+                                            <input type="checkbox" id="small" name="size" value="">Small<br>
+                                        </div>
+                                        <div class="item2">
+                                            <input type="checkbox" id="medium" name="size" value="">Medium<br>
+                                            <input type="checkbox" id="large" name="size" value="">Large<br>
+                                            <input type="checkbox" id="extralarge" name="size" value="">Extra Large<br>
+                                        </div>
+                                        <div class="item3">
+                                            <input type="checkbox" id="youths2" name="size" value="">Youth Small<br>
+                                            <input type="checkbox" id="youthm2" name="size" value="">Youth Medium<br>
+                                            <input type="checkbox" id="youthl2" name="size" value="">outh Large<br>
+                                            <input type="checkbox" id="small2" name="size" value="">Small<br>
+                                        </div>
+                                        <div class="item4">
+                                            <input type="checkbox" id="medium2" name="size" value="">Medium<br>
+                                            <input type="checkbox" id="large2" name="size" value="">Large<br>
+                                            <input type="checkbox" id="lextralarge2" name="size" value="">Extra Large<br>
+                                        </div>
+                                    </div>
+                                    <div class="section">
+                                        <h4>Permission to Play</h4>
+                                        <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+                                                Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+                                                accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+                                                employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+                                                on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+                                                sponsored activities, which transportation.</p>
+                                        <p>By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+                                                cancellation policy and agree to its terms. </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col6 flex-form">
+                                            <span>Parent/Signature:</span><input class="flex-form-items" type="text" name="Signature" value=""> 
+                                        </div>
+                                        <div class="col6 flex-form">
+                                            <span>Date:</span>
+                                            <input type="text" id="signDate" name="signdate" placeholder="DD/MM/YYYY" onclick="changePlaceholder()">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section btn-form">
+                                    <input type="submit" value="Submit" onclick="return validationForm()">
+                                    <input type="reset" value="Reset">
+                                </div>
+                            </form>
+                        </div>
+                        <div id="test">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="footer">
+        <p>Copyright &#169; by Phi Phan</p>
+    </div>
+    <script>
+        function menuClick(){
+            let x = document.getElementById("menu-ico");
+            let y = document.getElementById("menu-content");
+            y.style.display == "none" ? y.style.display = "block" : y.style.display = "none";
+        }
+    </script>
+</body>
+</html>

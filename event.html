@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/styles.css">
+<title>Events</title>
+</head>
+<body>
+    <div class="wrap-content">
+        <div class="wrap-content-bg">
+            <div class="header">
+                <div class="grid-header">
+                    <div class="grid-header-items logo"><a target="_blank" href="./index.html"><img src="./images/nysl_logo.png" alt="logo"></a></div>
+                    <div class="grid-header-items brand"><a href="./index.html">Northside Youth Soccer League</a></div>
+                    <div class="grid-header-items dropdown-menu"><img id="menu-ico" src="./images/menu-ico.png" onclick="menuClick()" alt="menu-ico"></div>
+                    <div class="grid-header-items menu">
+                        <div class="menu-items"><a href="./index.html">Home</a></div>
+                        <div class="menu-items"><a href="./about.html">About NYSL</a></div>
+                        <div class="menu-items"><a href="./policies.html">Rules & Policies</a></div>
+                        <div class="menu-items"><a href="./schedule.html">Schedule</a></div>
+                        <div class="menu-items"><a href="./registration.html">Registration</a></div>
+                        <div class="menu-items"><a href="./contact.html">Contact</a></div>
+                    </div>
+                </div>
+                <div id="menu-content">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About NYSL</a></li>
+                        <li><a href="./policies.html">Rules & Policies</a></li>
+                        <li><a href="./schedule.html">Schedule</a></li>
+                        <li><a href="./registration.html">Registration</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <img class="header-img" src="./images/design1_image1-1.png" alt="header bg">
+            </div> 
+            <div class="content">
+                <div class="content-inner">
+                    <h2 style="text-transform: uppercase; color: rgb(226, 226, 7);">Upcoming Events</h2>
+                    <div class="section">
+                        <h3>August 4</h3>
+                        <div class="section-content">   
+                            <p>NYSL Fundraiser</p>
+                        </div> 
+                    </div>
+                    <div class="section">
+                        <h3>August 16</h3>
+                        <div class="section-content"> 
+                            <p>Season Kick-off: Meet the Teams.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h3>September 1</h3>
+                        <div class="section-content"> 
+                            <p>First Game of the Season (Check Game Schedule for details)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                    <p>Copyright &#169; by Phi Phan</p>
+            </div>
+        </div>
+    </div>
+    <script>
+            function menuClick(){
+                let x = document.getElementById("menu-ico");
+                let y = document.getElementById("menu-content");
+                y.style.display == "none" ? y.style.display = "block" : y.style.display = "none";
+            }
+    </script>
+</body>
+</html>

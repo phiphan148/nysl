@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/styles.css">
+<script src="./js/validform.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home</title>
+</head>
+<body>
+    <div class="wrap-content">
+        <div class="wrap-content-bg">
+            <div class="header">
+                <div class="grid-header">
+                    <div class="grid-header-items logo"><a target="_blank" href="./index.html"><img src="./images/nysl_logo.png" alt="logo"></a></div>
+                    <div class="grid-header-items brand"><a href="./index.html">Northside Youth Soccer League</a></div>
+                    <div class="grid-header-items dropdown-menu"><img id="menu-ico" src="./images/menu-ico.png" onclick="menuClick()" alt="menu-ico"></div>
+                    <div class="grid-header-items menu">
+                        <div class="menu-items"><a id="homemenu" href="./index.html">Home</a></div>
+                        <div class="menu-items"><a id="aboutment" href="./about.html">About</a></div>
+                        <div class="menu-items"><a id="rulesmenu" href="./rules.html">Rules</a></div>
+                        <div class="menu-items"><a id="schedulemenu" href="./schedule.html">Schedule</a></div>
+                        <div class="menu-items"><a id="regismenu" href="./registration.html">Registration</a></div>
+                        <div class="menu-items"><a id="contactmenu" href="./contact.html">Contact</a></div>
+                    </div>
+                </div>
+                <div id="menu-content">
+                    <ul>
+                        <li><a id="homesub" href="./index.html">Home</a></li>
+                        <li><a id="aboutsub" href="./about.html">About NYSL</a></li>
+                        <li><a id="rulessub" href="./rules.html">Rules & Policies</a></li>
+                        <li><a id="schedulesub" href="./schedule.html">Schedule</a></li>
+                        <li><a id="regissubmenu" href="./registration.html">Registration</a></li>
+                        <li><a id="contactsub" href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <img class="header-img" src="./images/design1_image1-1.png" alt="header bg">
+            </div>    
+            <div class="content">
+                <div class="container">
+                    <div class="container-items first"><span class="op-bg bold-text"><a href="./event.html">Events</a></span></div>
+                    <div class="container-items second"><span class="op-bg bold-text"><a href="./about.html">About NYSL</a></span></div>
+                    <div class="container-items third"><span class="op-bg bold-text"><a href="./policies.html">Rules & Policies</a></span></div>
+                    <div class="container-items fourth"><span class="op-bg bold-text"><a href="./schedule.html">Game Schedule</a></span></div>
+                    <div class="container-items fifth"><span class="op-bg bold-text"><a href="./registration">Registration Form</a></span></div>
+                    <div class="container-items sixth"><span class="op-bg bold-text"><a href="./contact.html">Contact</a></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright &#169; by Phi Phan</p>
+    </div>
+    <script>
+        function menuClick(){
+            let x = document.getElementById("menu-ico");
+            let y = document.getElementById("menu-content");
+            y.style.display == "none" ? y.style.display = "block" : y.style.display = "none";
+        }
+    </script>
+</body>
+</html>
