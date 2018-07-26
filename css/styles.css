@@ -248,6 +248,9 @@ table{
 }
 .style-table th, td {
     border: 1px solid rgb(226, 226, 7, 0.5);
+   -moz-background-clip: padding;    
+            -webkit-background-clip: padding; 
+            background-clip: padding-box;  
 }
 .style-table tr:first-child{
     background: rgb(226, 226, 7);
