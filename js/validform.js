@@ -13,47 +13,18 @@
 // });
 document.addEventListener("DOMContentLoaded", function() {
     let x = window.location.href.split('/').slice(-1).toString();
-    console.log(x);
     let y = x.split('.')[0].charAt(0).toLocaleUpperCase()+x.split('.')[0].slice(1);
-    console.log(y);
-    let homemenu = document.getElementById('homemenu').textContent;
-    console.log(homemenu);
-    let aboutment = document.getElementById('aboutment').textContent;
-    console.log(aboutment);
-    let rulesmenu = document.getElementById('rulesmenu').textContent;
-    console.log(rulesmenu);
-    let schedulemenu = document.getElementById('schedulemenu').textContent;
-    console.log(schedulemenu);
-    let regismenu =document.getElementById('regismenu').textContent;
-    console.log(regismenu);
-    let contactmenu =document.getElementById('contactmenu').textContent;
-    console.log(contactmenu);
-    if(y=='Index'){
-        document.getElementById('homesub').classList.add("title-color");
-        document.getElementById('homemenu').classList.add("title-color");
-    } else if (y==aboutment){
-        document.getElementById('aboutment').classList.add("title-color");
-        document.getElementById('aboutsub').classList.add("title-color");
-    } else if (y==rulesmenu){
-        document.getElementById('rulesmenu').classList.add("title-color");
-        document.getElementById('rulessub').classList.add("title-color");
-    } else if (y==schedulemenu){
-        document.getElementById('schedulemenu').classList.add("title-color");
-        document.getElementById('schedulesub').classList.add("title-color");
-    } else if (y==regismenu){
-        document.getElementById('regismenu').classList.add("title-color");
-        // document.getElementById('regissub').classList.add("title-color");
-    } else if (y==contactmenu){
-        document.getElementById('contactmenu').classList.add("title-color");
-        document.getElementById('contactsub').classList.add("title-color");
+    let menulink = document.querySelectorAll(".alink");
+    for (let i in menulink){
+        console.log(menulink[i].textContent);
+        if(y=='Index'){
+            menulink[0].classList.add("title-color");
+            menulink[7].classList.add("title-color");
+        } else {
+        if(y==menulink[i].textContent){
+            menulink[i].classList.add("title-color");
+        }}
     }
-    // switch (x=='registration.html'){
-    //     case 0:
-    //     document.getElementById('regis-menu').style.color="red";
-    //     break;
-    //     case 1:
-    //     document.getElementById('home-menu').style.color="red";
-    // }
 });
 
 function validationForm (){
