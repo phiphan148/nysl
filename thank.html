@@ -1,85 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="./css/styles.css">
-<script src="./js/validform.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
 </head>
+
 <body>
     <div class="wrap-content touch">
         <div class="wrap-content-bg">
             <div class="header">
-                 <div class="grid-header">
-                    <div class="grid-header-items logo"><a target="_blank" href="./index.html"><img src="./images/nysl_logo.png" alt="logo"></a></div>
-                    <div class="grid-header-items brand"><a href="./index.html">Northside Youth Soccer League</a></div>
-                    <div class="grid-header-items dropdown-menu"><img id="menu-ico" src="./images/menu-ico.png" onclick="menuClick()" alt="menu-ico"></div>
+                <div class="grid-header">
+                    <div class="grid-header-items logo">
+                        <a target="_blank" href="./index.html">
+                            <img src="./images/nysl_logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="grid-header-items brand">
+                        <a href="./index.html">Northside Youth Soccer League</a>
+                    </div>
+                    <div class="grid-header-items dropdown-menu">
+                        <img id="menu-ico" src="./images/menu-ico.png" onclick="menuClick()" alt="menu-ico">
+                    </div>
                     <div class="grid-header-items menu">
-                        <div class="menu-items"><a id="homemenu" class="alink" href="./index.html">Home</a></div>
-                        <div class="menu-items"><a id="aboutment" class="alink" href="./about.html">About</a></div>
-                        <div class="menu-items"><a id="rulesmenu" class="alink" href="./rules.html">Rules</a></div>
-                        <div class="menu-items"><a class="alink" href="./event.html">Event</a></div>
-                        <div class="menu-items"><a id="schedulemenu" class="alink" href="./schedule.html">Schedule</a></div>
-                        <div class="menu-items"><a id="regismenu" class="alink" href="./registration.html">Registration</a></div>
-                        <div class="menu-items"><a id="contactmenu" class="alink" href="./contact.html">Contact</a></div>
+                        <div class="menu-items">
+                            <a id="homemenu" class="alink" href="./index.html">Home</a>
+                        </div>
+                        <div class="menu-items">
+                            <a id="aboutment" class="alink" href="./about.html">About</a>
+                        </div>
+                        <div class="menu-items">
+                            <a id="rulesmenu" class="alink" href="./rules.html">Rules</a>
+                        </div>
+                        <div class="menu-items">
+                            <a class="alink" href="./event.html">Event</a>
+                        </div>
+                        <div class="menu-items">
+                            <a id="schedulemenu" class="alink" href="./schedule.html">Schedule</a>
+                        </div>
+                        <div class="menu-items">
+                            <a id="regismenu" class="alink" href="./registration.html">Registration</a>
+                        </div>
+                        <div class="menu-items">
+                            <a id="contactmenu" class="alink" href="./contact.html">Contact</a>
+                        </div>
                     </div>
                 </div>
                 <div id="menu-content">
                     <ul>
-                        <li><a id="homesub" class="alink" href="./index.html">Home</a></li>
-                        <li><a id="aboutsub" class="alink" href="./about.html">About</a></li>
-                        <li><a id="rulessub" class="alink" href="./rules.html">Rules</a></li>
-                        <li><a class="alink" href="./event.html">Event</a></li>
-                        <li><a id="schedulesub" class="alink" href="./schedule.html">Schedule</a></li>
-                        <li><a id="regissub" class="alink" href="./registration.html">Registration</a></li>
-                        <li><a id="contactsub" class="alink" href="./contact.html">Contact</a></li>
+                        <li>
+                            <a id="homesub" class="alink" href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a id="aboutsub" class="alink" href="./about.html">About</a>
+                        </li>
+                        <li>
+                            <a id="rulessub" class="alink" href="./rules.html">Rules</a>
+                        </li>
+                        <li>
+                            <a class="alink" href="./event.html">Event</a>
+                        </li>
+                        <li>
+                            <a id="schedulesub" class="alink" href="./schedule.html">Schedule</a>
+                        </li>
+                        <li>
+                            <a id="regissub" class="alink" href="./registration.html">Registration</a>
+                        </li>
+                        <li>
+                            <a id="contactsub" class="alink" href="./contact.html">Contact</a>
+                        </li>
                     </ul>
                 </div>
                 <img class="header-img" src="./images/design1_image1-1.png" alt="header bg">
-            </div> 
+            </div>
             <div class="content">
                 <div class="content-inner">
                     <p>Thank you for your registration. Here is your data</p>
                     <div class="data-submit">
                         <table class="style-table">
                             <tr>
-                              <th>Form Field</th>
-                              <th>Your data</th>
+                                <th>Form Field</th>
+                                <th>Your data</th>
                             </tr>
-                          <script language="javascript">
-                          var args = location.search.substr(1).split('&');
-                          for (var i = 0; i < args.length; ++i) {
-                            var parts = args[i].split('=');
-                            if (parts != null) {
-                              var field = parts[0];
-                              var value = parts[1];
-                              if (value == null) {
-                                value = "null"
-                              }
-                              else {
-                                value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
-                              }
-                              document.writeln('<tr><td>' + field + '</td>');
-                              document.writeln('<td>' + value + '</td></tr>');
-                            }
-                          }
-                          </script>
+                            <script language="javascript">
+                                var args = location.search.substr(1).split('&');
+                                for (var i = 0; i < args.length; ++i) {
+                                    var parts = args[i].split('=');
+                                    if (parts != null) {
+                                        var field = parts[0];
+                                        var value = parts[1];
+                                        if (value == null) {
+                                            value = "null"
+                                        }
+                                        else {
+                                            value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                                        }
+                                        document.writeln('<tr><td>' + field + '</td>');
+                                        document.writeln('<td>' + value + '</td></tr>');
+                                    }
+                                }
+                            </script>
                         </table>
                     </div>
                 </div>
             </div>
             <div class="footer">
-                    <p>Copyright &#169; by Phi Phan</p>
+                <p>Copyright &#169; by Phi Phan</p>
             </div>
         </div>
     </div>
-    <script>
-            function menuClick(){
-                let x = document.getElementById("menu-ico");
-                let y = document.getElementById("menu-content");
-                y.style.display == "none" ? y.style.display = "block" : y.style.display = "none";
-            }
-    </script>
+    <script src="./js/validform.js"></script>
 </body>
+
 </html>
