@@ -30,6 +30,10 @@ ul li {
 .bold-text{
     font-weight: bold;
 }
+.touch{
+   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
 .wrap-content{
     background: url('../images/bg.jpg') repeat;
     background-size: 100%;
