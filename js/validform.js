@@ -50,8 +50,10 @@ function validateLname(ElementInput) {
         return 'Please fill out your last name\n';
     }
 }
+
 function validateDOB(ElementInput) {
     var age = /^((0[1-9]|[12]\d|3[0-1])\/(0[1-9]|1[012])\/(19[0-9]{2}|20[0-9]{2}))$/;
+    console.log(age);
     if (age.test(ElementInput.value)) {
         let year = parseInt(ElementInput.value.slice(6));
         let currentDate = new Date();
